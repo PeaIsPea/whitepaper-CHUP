@@ -31,40 +31,9 @@
 
 ---
 
-## 📸 Screenshots & Infographics
-
-> Find concept art, UI wireframes, and a full roadmap infographic in the `/assets` folder.
-
----
-
 ## 🌐 Live Demo
 
 > 🔗 Coming soon...
-
----
-
-## 📂 Folder Structure
-
-```
-📁 chup-web3/
-├── index.html
-├── style.css
-├── scripts/
-│   └── app.js
-├── assets/
-│   ├── roadmap.png
-│   └── logo.svg
-└── README.md
-```
-
----
-
-## 📬 Social & Contact
-
-- 🌐 Website: [https://chup.io](https://chup.io) *(placeholder)*
-- 🐙 GitHub: [https://github.com/yourusername](https://github.com/yourusername)
-- 📘 Facebook: [https://facebook.com/yourusername](https://facebook.com/yourusername)
-- 🐦 Twitter: [https://twitter.com/yourusername](https://twitter.com/yourusername)
 
 ---
 
