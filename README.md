@@ -1,4 +1,5 @@
 # 🌍 CHUP: Multi-Kingdom Open World Web3 Game
+![Alt text](poster.png)
 
 **CHUP** is a Web3 open-world multiplayer RPG set across four distinct kingdoms: **Colony**, **Homestead**, **Utopia**, and **Paragon**. Players explore 40 unique maps, fight in PvE & PvP arenas, upgrade NFT weapons, and participate in kingdom-wide battles — all driven by a dual-token economy and deep profession system.
 
