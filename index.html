@@ -1,170 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHUP - Web3 Survival Game</title>
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  
-
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elemental Conquest – Web3 Battle Royale Kỹ Năng Cốt Lõi - Whitepaper & Lộ Trình</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="LOGOPOSTER.jpg" type="image/x-icon">
 </head>
-
-
 <body>
-  
-  <header>
-    <h1>CHUP - Web3 Survival Game</h1>
-    <p>Developed by LamTuePea | Built on BNB Chain</p>
-  </header>
+    <canvas id="particles-canvas"></canvas>
 
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#tokenomics">Tokenomics</a>
-    <a href="#nfts">NFT & Gear</a>
-    <a href="#web3">Web3 Integration</a>
-    <a href="#community">Community</a>
-  </nav>
-
-  <main>
-    <section id="overview">
-      <h2>1. Game Overview</h2>
-      <div style="text-align: center;">
-        <img src="poster.png" style="width: 50%; height: auto;">
-      </div>
-      <p><strong>CHUP</strong> is a hardcore survival Web3 game where players start as powerless civilians in one of four kingdoms. With a "one-life" mechanic and rich profession system, every decision can mean survival or defeat. The game features 40 maps, diverse missions, national wars, and PvE/PvP battlefields.</p>
-    </section>
-
-    <section id="tokenomics">
-      <h2>2. Dual-Token Economy</h2>
-      <p><strong>$PHC</strong> - Main token for trading, rewards, and NFT marketplace.</p>
-      <p><strong>$PCOIN</strong> - Sub-token used for upgrading skills, gear, and items.</p>
-      <ul>
-        <li>Burn mechanisms to reduce inflation (5% fee on $PHC transactions).</li>
-        <li>Leveling system rewards both tokens up to level 20.</li>
-      </ul>
-    </section>
-
-    <section id="nfts">
-      <h2>3. NFT & Legendary Weapons</h2>
-      <p>All equipment including weapons, gear, houses, and tools are NFTs. Gear can be upgraded from level 0 to 50. Legendary weapons (3 unique items) are dropped randomly and visible on-chain. If the owner dies and the weapon is not claimed in 15 minutes, the item is reclaimed by the server for future events.</p>
-    </section>
-
-    <section id="web3">
-      <h2>4. Web3 Integration</h2>
-      <p>Guest login enabled. Players can later link Web3 wallets for NFT & token management. All drops, trades, and upgrades are verifiable on the BNB Chain.</p>
-      <p>DAO governance will allow players to vote on events, map expansions, and rule changes.</p>
-      <h3 style="color:#00ffc8;">Zero-Knowledge Proof for Legendary Weapon Drops</h3>
-      <p>To ensure fairness and transparency, CHUP utilizes zero-knowledge proofs (ZKP) to validate that legendary weapon drops are conducted randomly and without manipulation.</p>
-      <ul>
-        <li>Drop events are seeded with unpredictable data (e.g. block hash, server time).</li>
-        <li>A zk-SNARK proof is generated to confirm the drop was executed fairly without exposing the internal logic.</li>
-        <li>The proof is published and verifiable on-chain or accessible via game logs.</li>
-        <li>This prevents tampering and reassures the community that even developers cannot rig drops.</li>
-      </ul>
-    </section>
-
-    <section id="community">
-      <h2>5. Community & World Events</h2>
-      <ul>
-        <li>Each kingdom represents a national identity (great for community building).</li>
-        <li>Guild system, profession rankings, and cooperative events like wars and raids.</li>
-        <li>In global events, players from each kingdom cooperate under one flag despite internal guild competition.</li>
-      </ul>
-    </section>
-
-    
-
-    
-
-    
-
-
-    <section id="gallery">
-      <h2>6. Gameplay Screenshots (Illustration)</h2>
-      <p>Image for illustration purposes only.</p>
-    
-      <h3>Map Images</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <img src="images/Colony.png" alt="Map Image" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-        <img src="images/Homestead.png" alt="Map Image" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-        <img src="images/Utopia.png" alt="Map Image" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-        <img src="images/Paragon.png" alt="Map Image" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-      </div>
-    
-      <h3>Gameplay Images</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <img src="images/chieudausamac.png" alt="Gameplay Screenshot 1" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-        <img src="images/NPC.png" alt="Gameplay Screenshot 2" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-      </div>
-
-      <h3>Token</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <img src="images/token.png" alt="Toekn" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-      </div>
-
-      <h3>Weapon</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <div>
-          <h2 style="color: #00ffc8;">CP-115</h2>
-          <img src="images/CP-115.png" alt="CP-115" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
+    <div class="container">
+        <div class="language-selector" style="position: fixed; top: 20px; right: 20px; z-index: 10;">
+            <button onclick="changeLanguage('vi')" style="padding: 8px 12px; margin-right: 5px; cursor: pointer;">Tiếng Việt</button>
+            <button onclick="changeLanguage('en')" style="padding: 8px 12px; cursor: pointer;">English</button>
         </div>
-        <div>
-          <h2 style="color: #00ffc8;">Syntax</h2>
-          <img src="images/Syntax.png" alt="CP-115" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
+
+        <div class="tabs-nav">
+            <button class="tab-link active" onclick="openTab(event, 'tab-whitepaper')" data-i18n="nav_whitepaper_tab">Whitepaper</button>
+            <button class="tab-link" onclick="openTab(event, 'tab-roadmap')" data-i18n="nav_roadmap_tab">Lộ Trình Phát Triển</button>
+            <button class="tab-link" onclick="openTab(event, 'tab-roadmap-timeline')" data-i18n="nav_roadmap_timeline_tab">Lộ Trình Thời Gian</button>
         </div>
-        
-        <div>
-          <h2 style="color: #cb0101;">?</h2>
-          <img src="images/Rank1.png" alt="CP-115" style="max-width: 100%; width: 280px; border: 2px solid #cb0101; border-radius: 8px;">
-        </div>
-        
-      </div>
 
-      
-      
-      
-    </section>
-
+        <div id="tab-whitepaper" class="tab-pane active">
+            <section style="text-align: center">
+                <img src="imgs/chup_icon.png" alt="CHUP Logo">
+                <h1 data-i18n="game_title">CHUP: Thế Giới Mở Đa Vương Quốc với Cơ Chế PvP và PvE Độc Đáo</h1>
+                <p data-i18n="whitepaper_welcome_message">Chào mừng đến với CHUP, một thế giới mở rộng lớn được chia thành bốn vương quốc riêng biệt: Colony, Homestead, Utopia, và Paragon. Mỗi vương quốc không chỉ mang một cái tên ý nghĩa mà còn là nơi khởi đầu cho những cuộc phiêu lưu và trải nghiệm độc đáo của người chơi.</p>
+                <h2 data-i18n="whitepaper_explore_world_title">Khám Phá Thế Giới Rộng Lớn</h2>
+                <p data-i18n="whitepaper_explore_world_content">Thế giới CHUP bao gồm tổng cộng 40 bản đồ, trong đó có 4 bản đồ tương ứng với bốn vương quốc chính. Mỗi vương quốc sở hữu 10 cổng dịch chuyển: 9 cổng dẫn đến 36 bản đồ chiến đấu đa dạng, nơi người chơi có thể tham gia cày cấp, hoàn thành nhiệm vụ và thu thập phần thưởng giá trị. Cổng còn lại kết nối trực tiếp giữa các vương quốc, tạo điều kiện cho sự giao lưu và cạnh tranh giữa cộng đồng người chơi.</p>
+                <h2 data-i18n="1">Cơ Chế PvP và PvE Hấp Dẫn</h2>
+                <p data-i18n="2">CHUP mang đến sự kết hợp hoàn hảo giữa cơ chế PvP (Player versus Player) và PvE (Player versus Environment). Tại 36 bản đồ chiến đấu, người chơi có thể tự do tham gia vào những trận chiến nảy lửa với người chơi khác hoặc hợp tác thành đội để chinh phục những thử thách PvE, tiêu diệt quái vật và vượt qua các màn chơi khó khăn. Phần thưởng khi hoàn thành nhiệm vụ sẽ là token, được phân chia đều cho các thành viên trong đội hoặc cá nhân nếu thực hiện một mình. Người chơi có thể tương tác với các NPC trong vương quốc để nhận nhiệm vụ và khám phá cốt truyện của trò chơi.</p>
+                <h2 data-i18n="3">Hệ Thống Nhân Vật và Nghề Nghiệp Đa Dạng</h2>
+                <p data-i18n="4">Khi bắt đầu cuộc hành trình trong CHUP, nhân vật của người chơi sẽ là một cá nhân bình thường, không sở hữu bất kỳ sức mạnh đặc biệt nào. Tuy nhiên, tại giai đoạn tạo nhân vật, người chơi sẽ được lựa chọn từ một hệ thống nghề nghiệp phong phú, đồng thời quyết định vương quốc mà họ sẽ đặt chân đến đầu tiên, qua đó xác định "quốc tịch" trong thế giới game. Mỗi nghề nghiệp sẽ có những điểm mạnh kỹ năng riêng biệt, ví dụ như bác sĩ có khả năng hồi máu và sơ cứu vượt trội, thợ săn nổi bật với độ chính xác khi sử dụng cung tên, hay vận động viên sở hữu thể lực dồi dào. Trong quá trình khám phá và chiến đấu, người chơi có thể thu thập điểm kinh nghiệm để nâng cấp vũ khí và kỹ năng cá nhân.</p>
+                <h2 data-i18n="5">Điểm và Token - Nền Tảng Kinh Tế Trong Game</h2>
+                <ul data-i18n="6">
+                    <li data-i18n="7">$PHC (Primary Hub Coin): Đây là đơn vị tiền tệ chính trong CHUP, được sử dụng cho các giao dịch mua bán giữa người chơi, trao đổi NFT (Non-Fungible Tokens) như vũ khí, trang phục, đạo cụ,... Người chơi có thể kiếm được $PHC thông qua việc hoàn thành nhiệm vụ hoặc đánh bại người chơi khác. Kiếm được thông qua giao dịch giữa người chơi, mua bán NFT, và hoàn thành nhiệm vụ.</li>
+                    <li data-i18n="8">$PCOIN (Primary Coin): Đồng tiền phụ này được dùng để nâng cấp các chỉ số kỹ năng của nhân vật, cũng như cải thiện các vật phẩm có tác động đến chỉ số, mà phần lớn trong số đó là NFT. Thu được khi người chơi tham gia các hoạt động nghề nghiệp trong vương quốc (chăn nuôi, trồng trọt, giao hàng, săn bắn) hoặc tiêu diệt quái vật tại các bản đồ chiến đấu.</li>
+                </ul>
+                <h2 data-i18n="9">NFT - Tài Sản Số Hóa Giá Trị</h2>
+                <p data-i18n="10">NFT trong CHUP bao gồm vũ khí, trang phục và các đạo cụ khác mà người chơi có thể tự do mua bán và sở hữu. Vũ khí khi mới nhận sẽ ở cấp độ 0 và có thể được nâng cấp lên tối đa cấp độ 100 bằng $PCOIN. Sự thay đổi về cấp độ sẽ đi kèm với sự thay đổi về màu sắc hiển thị của vũ khí và trang phục:</p>
+                <ul style="list-style-type: none;" data-i18n="11">
+                    <li data-i18n="12">Cấp 0-10: Màu nâu</li>
+                    <li data-i18n="13">Cấp 11-20: Màu trắng</li>
+                    <li data-i18n="14">Cấp 21-30: Màu vàng</li>
+                    <li data-i18n="15">Cấp 31-40: Màu cyan</li>
+                    <li data-i18n="16">Cấp 41-50 (tối đa): Màu cam</li>
+                </ul>
+                <h2 data-i18n="17">Vũ Khí Đặc Biệt - Huyền Thoại Giữa Thế Giới</h2>
+                <p data-i18n="18">Ngoài những vật phẩm thông thường, CHUP còn sở hữu ba vũ khí đặc biệt, cấp độ huyền thoại (tương đương cấp độ 100), được nhà phát hành thả ngẫu nhiên tại 36 bản đồ chiến đấu, không xuất hiện trong khu vực vương quốc. Ba vũ khí này là độc nhất vô nhị và không có phiên bản sao chép:</p>
+                <ul style="list-style-type: none;" data-i18n="19">
+                    <li>
+                        <h3 data-i18n="20">CP-115 (Hạng 3):</h3>
+                        <p data-i18n="21">Một vũ khí không có hình dáng cố định, có khả năng biến đổi thành nhiều loại vũ khí khác nhau như súng, kiếm, cung, nỏ, với sức mạnh sát thương gần như tuyệt đối.</p>
+                    </li>
+                    <li>
+                        <h3 data-i18n="22">Quả cầu Syntax (Hạng 2):</h3>
+                        <p data-i18n="23">Cho phép người sở hữu dịch chuyển tức thời đến bất kỳ vị trí nào trên toàn bộ máy chủ.</p>
+                    </li>
+                    <li>
+                        <h3 data-i18n="24">(Hạng 1):</h3>
+                        <p data-i18n="25">Một bí ẩn chưa được tiết lộ, hứa hẹn sẽ là vật phẩm quyền năng nhất trong thế giới CHUP.</p>
+                    </li>
+                </ul>
+                <p data-i18n="26">Những vũ khí huyền thoại này có thể được mua bán giữa người chơi, và giá trị của chúng chắc chắn không hề nhỏ. Mỗi ngày, hệ thống sẽ ngẫu nhiên thả một trong ba vũ khí này trên các bản đồ chiến đấu. Khi một người chơi sở hữu vũ khí huyền thoại, sự kiện thả sẽ tạm dừng cho đến khi vũ khí đó bị mất đi (khi người sở hữu bị đánh bại và không ai nhặt được trong vòng 15 phút, hệ thống sẽ thu hồi).</p>
+                
+                <h2 data-i18n="27">Khu Vực Chiến Đấu và Cấm Chiến Đấu</h2>
+                <p data-i18n="28">Các bản đồ chiến đấu (36 maps) là nơi người chơi có thể tự do tham gia PvP và PvE. Ngược lại, khu vực vương quốc là vùng an toàn, nơi mọi hình thức chiến đấu đều bị nghiêm cấm.</p>
+            
+                <h2 data-i18n="29">Bản Đồ Chiến Đấu - Nơi Thử Thách và Sinh Tồn</h2>
+                <p data-i18n="30">Mỗi bản đồ chiến đấu sở hữu địa hình và đặc điểm địa lý riêng biệt. Người chơi khi đặt chân đến đây phải luôn ghi nhớ khẩu hiệu "giết hoặc bị giết". Việc hợp tác thành đội là một lựa chọn thông minh để tăng cơ hội sống sót, bởi nguy hiểm có thể đến từ cả quái vật NPC lẫn những người chơi khác.</p>
+            </section>
+            
+            <section>
+                <h2 data-i18n="overview_title">1.Gameplay & Trải Nghiệm Người Chơi</h2>
+                
+                <h3 id="dam-bao-su-cong-bang" data-i18n="31">Đảm Bảo Sự Công Bằng</h3>
+                <p data-i18n="overview_content">Để giải quyết nỗi lo "bị farm" cho người chơi mới, CHUP giới thiệu hệ thống cấp độ nhân vật, tối đa là 100.</p>
+                <ul>
+                    <li data-i18n="32">Người chơi từ cấp 1-20 được xem là "người chơi mới", chỉ có thể nhận các nhiệm vụ cấp 1-10 tại bản đồ PvE riêng biệt (không có PvP) và phần thưởng chỉ là $PCOIN. Mỗi lần lên cấp trong giai đoạn này sẽ nhận được 1 $PHC và 1000 $PCOIN.</li>
+                    <li data-i18n="33">$PHC chỉ được thưởng khi hoàn thành nhiệm vụ tại các bản đồ có cả PvP và PvE.</li>
+                    <li data-i18n="34">Khi đạt cấp 20, người chơi được xem là đã đủ khả năng đối mặt với các tình huống PvP.</li>
+                </ul>
     
+                <h3 id="he-thong-nghe-nghiep" data-i18n="35">Hệ Thống Nghề Nghiệp</h3>
+                <p data-i18n="36">Phát triển một hệ sinh thái nghề phụ đa dạng, tạo sự tương tác và phụ thuộc lẫn nhau giữa người chơi (ví dụ: bác sĩ cần thiết cho tổ đội, thợ rèn chế tạo vũ khí,...):</p>
+                <ul>
+                    <li data-i18n="37">Các nghề như bác sĩ, thợ rèn, giao hàng,... hỗ trợ cho PvP và PvE.</li>
+                    <li data-i18n="38">Có xếp hạng nghề nghiệp và bảng danh vọng, tạo sự cạnh tranh liên tục giữa người chơi.</li>
+                </ul>
     
+                <h3 id="he-thong-karma" data-i18n="39">Hệ thống Karma / danh tiếng</h3>
+                <p data-i18n="40">người chơi xấu (PK quá mức, phản guild) bị đánh dấu đỏ, khó vào quốc gia khác, bị thương nhân tăng giá v.v…</p>
+            </section>
+    
+            <section>
+                <h2 data-i18n="gameplay_title">2.Tokenomics ($PHC và $PCOIN)</h2>
+                <ul>
+                    <li data-i18n="41">Cơ Chế Đốt Token: Áp dụng cơ chế đốt 5% phí gas cho mỗi giao dịch bằng $PHC và một lượng $PCOIN khi nâng cấp vật phẩm để kiểm soát lạm phát.</li>
+                    <li data-i18n="42">Kiểm Soát Nguồn Cung NFT: Giới hạn số lượng và tạo sự khác biệt rõ ràng về sức mạnh giữa các NFT để đảm bảo sự cân bằng giữa người chơi trả phí và người chơi tự do, tuân thủ phương châm "play to earn, not pay to win".</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2 data-i18n="player_journey_title">3.NFT & Vũ Khí Huyền Thoại</h2>
+                <ul>
+                    <li data-i18n="43">NFT nghề nghiệp có thể nâng cấp / giao dịch, ví dụ: chứng chỉ "bác sĩ cấp cao", cấp độ càng cao càng khan hiếm, giá trị tăng.</li>
+                    <li data-i18n="44">Minh Bạch Trong Việc Rơi Vật Phẩm: Đảm bảo khả năng theo dõi công khai và xác minh các sự kiện rơi vũ khí huyền thoại trên blockchain, tránh mọi nghi ngờ về sự can thiệp từ nhà phát hành.</li>
+                    <li data-i18n="45">Rủi Ro Nâng Cấp Vũ Khí Cao Cấp: Vũ khí cấp 41-50 (màu cam) sẽ có rủi ro khi nâng cấp và tiêu tốn cả $PCOIN lẫn một lượng nhỏ $PHC, tăng độ hiếm và tránh tình trạng người chơi đạt trang bị tối đa quá dễ dàng.</li>
+                    <li data-i18n="46">Cơ Chế Thu Hồi Vũ Khí Huyền Thoại: Khi một vũ khí huyền thoại đã có chủ, sự kiện rơi sẽ kết thúc. Nếu người sở hữu bị đánh bại và vũ khí không được nhặt trong 15 phút, hệ thống sẽ tự động thu hồi và kích hoạt lại sự kiện rơi sau đó.</li>
+                    <li data-i18n="47">Tích Hợp Zero-Knowledge Proof (ZKP): Sử dụng ZKP để xác thực tính ngẫu nhiên và công bằng của việc rơi vũ khí huyền thoại, đảm bảo không có sự can thiệp từ nhà phát hành. Các sự kiện rơi được tạo ra dựa trên dữ liệu không thể đoán trước (ví dụ: hash khối, thời gian máy chủ) và bằng chứng zk-SNARK sẽ được công bố để cộng đồng có thể kiểm chứng.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2 data-i18n="elements_class_title">4.Trải Nghiệm Web3</h2>
+                <ul>
+                    <li data-i18n="48">Tích Hợp Ví Web3 Thuận Tiện: Thiết kế hệ thống đăng nhập khách và liên kết ví sau để người chơi dễ dàng tiếp cận và làm quen với công nghệ Web3.</li>
+                    <li data-i18n="49">DAO Quản Trị Trong Tương Lai: Trao quyền cho cộng đồng thông qua hệ thống DAO, cho phép người chơi tham gia bỏ phiếu về các sự kiện, bản đồ mới, giới hạn rơi vật phẩm,...</li>
+                    <li data-i18n="50">Tích hợp NFT & tài sản số hóa để bảo vệ giá trị thời gian và kỹ năng của người chơi.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2 data-i18n="weapons_items_title">5. Phát Triển Cộng Đồng và Mở Rộng</h2>
+                <ul>
+                    <li data-i18n="51">Quốc Tịch và Bang Hội: Mỗi vương quốc có quốc tịch riêng, tạo nền tảng vững chắc cho việc phát triển cộng đồng theo khu vực hoặc bang hội. Một vương quốc có thể có nhiều bang hội khác nhau, tương tự như hệ thống đa đảng.</li>
+                    <li data-i18n="52">Sự Kiện Liên Vương Quốc: Tổ chức các sự kiện quy mô lớn giữa các vương quốc như chiến tranh vùng (war zone), cướp tài nguyên, quốc chiến. Trong các sự kiện này, bản đồ của bốn vương quốc sẽ được hợp nhất thành một bản đồ chiến đấu đặc biệt. Người chơi sẽ không bị mất vật phẩm khi chết trong sự kiện, và tài nguyên của vương quốc sẽ thay đổi dựa trên kết quả chiến đấu. Các bang hội trong cùng một vương quốc sẽ phải đoàn kết để chiến đấu vì lợi ích chung.</li>
+                    <li data-i18n="53">Hệ Thống Guild và Xếp Hạng Nghề Nghiệp: Phát triển hệ thống guild mạnh mẽ và bảng xếp hạng cho từng nghề nghiệp để tăng tính cạnh tranh và giữ chân người chơi lâu dài.</li>
+                    <li data-i18n="54">Cơ Chế "Một Mạng": Đây là một yếu tố cốt lõi tạo nên sự khác biệt của CHUP. Khi nhân vật chết, người chơi sẽ mất toàn bộ vật phẩm (có thể bị người chơi khác nhặt hoặc bị hệ thống thu hồi sau 15 phút). Sau khi tạo lại nhân vật, người chơi sẽ trở về cấp độ 1 nhưng sẽ nhận được x2 kinh nghiệm trong giai đoạn đầu để nhanh chóng bắt kịp. Cơ chế này khuyến khích người chơi đưa ra những quyết định chiến đấu thận trọng, tương tự như trong thế giới thực.</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2 data-i18n="anti_hack_security_title">6.Biện Pháp Chống Hack Bằng AI</h2>
+                <p data-i18n="55">CHUP hướng tới một môi trường chơi công bằng và an toàn tuyệt đối bằng cách triển khai hệ thống phòng chống gian lận tiên tiến, tích hợp công nghệ AI (Trí tuệ nhân tạo) và machine learning để phát hiện, ngăn chặn và xử lý các hành vi gian lận theo thời gian thực. Đây là một trong những trụ cột quan trọng đảm bảo sự công bằng trong trải nghiệm chơi game Web3.</p>
+                <ul>
+                    <li>
+                        <h3 data-i18n="anti_hack_sub_heading_1">Hệ Thống Giám Sát Hành Vi Thông Minh</h3>
+                        <p data-i18n="56">CHUP sử dụng AI để học và xây dựng mô hình hành vi bình thường của người chơi qua nhiều yếu tố như:</p>
+                        <ul>
+                            <li data-i18n="anti_hack_security_item1">Tốc độ di chuyển và tấn công</li>
+                            <li data-i18n="anti_hack_security_item2">Tỷ lệ bắn trúng/quái vật bị tiêu diệt trong PvE</li>
+                            <li data-i18n="anti_hack_security_item3">Thời gian phản ứng trong PvP</li>
+                            <li data-i18n="anti_hack_security_item4">Mô hình tương tác với NPC và các hành vi lặp lại</li>
+                        </ul>
+                        <p data-i18n="55">Bất kỳ hành vi nào vượt ra ngoài ngưỡng thông thường sẽ bị gắn cờ nghi vấn. Ví dụ: auto-aim, auto-pathing, macro farming, hoặc dùng script để thao tác lặp lại không cần đầu vào người chơi.</p>
+                    </li>
+                    <li>
+                        <h3 data-i18n="anti_hack_sub_heading_2">Hệ Thống Phát Hiện Bot</h3>
+                        <p data-i18n="56">Một hệ thống machine learning được huấn luyện để phân biệt người chơi thật và bot thông qua:</p>
+                        <ul>
+                            <li data-i18n="anti_hack_security_item3_sub1">Biểu đồ chuyển động chuột/ngón tay (mobile)</li>
+                            <li data-i18n="anti_hack_security_item3_sub2">Tần suất thao tác phím</li>
+                            <li data-i18n="anti_hack_security_item3_sub3">Sự thay đổi hành vi trong thời gian dài</li>
+                        </ul>
+                        <p data-i18n="57">Ngoài ra, hệ thống sẽ ngẫu nhiên yêu cầu người chơi thực hiện tác vụ xác minh ngắn (micro-validation), ví dụ: chọn biểu tượng đúng theo hướng dẫn, thực hiện combo kỹ năng đúng thứ tự,... trong các tình huống nghi vấn.</p>
+                    </li>
+                    <li>
+                        <h3 data-i18n="anti_hack_sub_heading_3">AI Phân Tích Dữ Liệu Blockchain</h3>
+                        <p data-i18n="58">Vì CHUP tích hợp sâu với blockchain, hệ thống AI cũng giám sát các giao dịch NFT và token để phát hiện bất thường về kinh tế, như:</p>
+                        <ul>
+                            <li data-i18n="59">Chuyển vật phẩm với tần suất cao giữa các ví liên quan</li>
+                            <li data-i18n="60">Giao dịch với giá bất hợp lý lặp lại</li>
+                            <li data-i18n="61">Vòng lặp farm token không tự nhiên</li>
+                        </ul>
+                        <p data-i18n="62">Từ đó, AI sẽ gửi cảnh báo đến bộ phận quản trị hoặc tự động đóng băng tài khoản/ví nếu đạt ngưỡng nghi ngờ cao.</p>
+                    </li>
+                    <li>
+                        <h3 data-i18n="anti_hack_sub_heading_4">Cơ Chế "Zero Tolerance"</h3>
+                        <p data-i18n="63">Một khi AI phát hiện hành vi gian lận:</p>
+                        <ul>
+                            <li data-i18n="64">Tài khoản có thể bị vô hiệu hóa vĩnh viễn nếu vi phạm rõ ràng.</li>
+                            <li data-i18n="65">NFT gian lận bị đóng băng khỏi hệ thống marketplace (không thể giao dịch).</li>
+                            <li data-i18n="66">Trong trường hợp nhẹ, người chơi sẽ bị giảm danh tiếng, ảnh hưởng đến quyền truy cập vương quốc khác hoặc bị hạn chế hoạt động nghề nghiệp trong thời gian xác minh.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 data-i18n="anti_hack_sub_heading_5">Tích Hợp Công Nghệ AI Edge Computing</h3>
+                        <p data-i18n="67">Để tăng tốc độ phát hiện gian lận, CHUP sử dụng mô hình AI edge-based được nhúng trực tiếp trong client game, giúp phát hiện sớm auto-clicker, injector, cheat engine mà không cần gửi mọi dữ liệu lên server, từ đó giảm độ trễ và tiết kiệm tài nguyên.</p>
+                    </li>
+                </ul>
+            </section>
+        </div> <div id="tab-roadmap" class="tab-pane">
+            <section>
+                <h2 data-i18n="roadmap_main_title">Lộ Trình Phát Triển MVP (Minimum Viable Product)</h2>
+                <p data-i18n="roadmap_intro">Để đảm bảo tính khả thi và kiểm nghiệm chất lượng trải nghiệm cốt lõi trước khi mở rộng, CHUP sẽ phát triển theo lộ trình phân đoạn rõ ràng:</p>
 
-    <section id="community">
-      <h2>7. Roadmap</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <img src="images/roadmap.png" alt="Roadmap" style="max-width: 100%; width: 280px; border: 2px solid #00ffc8; border-radius: 8px;">
-      </div>
-    </section>
+                <h3 data-i18n="roadmap_stage1_title">Giai Đoạn 1: Ra Mắt MVP (Tối Thiểu)</h3>
+                <ul>
+                    <li data-i18n="roadmap_stage1_item1">Một Vương Quốc Duy Nhất được chọn làm điểm khởi đầu (ví dụ: Colony), nơi người chơi sẽ trải nghiệm các cơ chế gameplay nền tảng.</li>
+                    <li data-i18n="roadmap_stage1_item2">4 Bản Đồ đầu tiên:
+                        <ul>
+                            <li data-i18n="roadmap_stage1_item2_sub1">2 bản đồ PvE (để cày cấp, săn quái, làm nhiệm vụ)</li>
+                            <li data-i18n="roadmap_stage1_item2_sub2">1 bản đồ hỗn hợp PvE/PvP (dùng cho giai đoạn sau test PvP)</li>
+                            <li data-i18n="roadmap_stage1_item2_sub3">1 bản đồ đấu luyện (PvP đối kháng có kiểm soát)</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="roadmap_stage1_item3">1 Nghề Nghiệp/ Class Nhân Vật được mở khóa trước (ví dụ: Thợ săn – thiên về chiến đấu tầm xa, phù hợp kiểm nghiệm cơ chế chiến đấu)</li>
+                    <li data-i18n="roadmap_stage1_item4">Tích hợp Web3 tối thiểu:
+                        <ul>
+                            <li data-i18n="roadmap_stage1_item4_sub1">Ví Web3 có thể kết nối sau khi đăng nhập khách</li>
+                            <li data-i18n="roadmap_stage1_item4_sub2">Token $PCOIN và NFT vũ khí cơ bản</li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <section>
-      <h2>📄 Full Whitepaper</h2>
-      <p>You can view the full Vietnamese report with all the game mechanics, tokenomics details and ecosystem plan below:</p>
-      <a class="whitepaper-link" href="whitepaper.pdf" target="_blank">Download Whitepaper PDF</a>
-    </section>
-
-
-  </main>
-
-  <footer style="text-align: center; padding: 20px;">
-    <p>CHUP &copy; 2025 by LamTuePea | Built for the Web3 Game Concept Contest</p>
-    <div style="margin-top: 10px;">
-      <a href="https://github.com/PeaIsPea" target="_blank" style="margin: 0 10px; color: #333;">
-        <i class="fa-brands fa-github fa-beat" style="color: #74C0FC;"></i>
-      </a>
-      <a href="https://www.facebook.com/html.html.2dasd/" target="_blank" style="margin: 0 10px; color: #3b5998;">
-        <i class="fa-brands fa-facebook fa-beat" style="color: #74C0FC;"></i>
-      </a>
-      <a href="https://x.com/NhanKenh73582" target="_blank" style="margin: 0 10px; color: #1da1f2;">
-        <i class="fa-brands fa-x-twitter fa-beat" style="color: #74C0FC;"></i>
-      </a>
-    </div>
-  </footer>
-  
-  
-  <script src="js/script.js"></script>
+                <h3 data-i18n="roadmap_dev_test_title">Phân Đoạn Phát Triển & Test Cộng Đồng</h3>
+                <p data-i18n="roadmap_dev_test_intro">Để đảm bảo mọi tính năng đều được thử nghiệm kỹ càng, mỗi thành phần gameplay sẽ được test tách biệt với cộng đồng theo lộ trình sau:</p>
+                <ul>
+                    <li data-i18n="roadmap_pve_testing_title">Giai Đoạn PvE Testing (Closed Alpha):
+                        <ul>
+                            <li data-i18n="roadmap_pve_testing_item1">Tập trung vào nhiệm vụ, quái vật, AI và hệ thống điểm thưởng $PCOIN</li>
+                            <li data-i18n="roadmap_pve_testing_item2">Kiểm tra trải nghiệm cá nhân và tổ đội</li>
+                            <li data-i18n="roadmap_pve_testing_item3">Cân bằng vật phẩm, tỷ lệ rơi, chỉ số nghề nghiệp</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="roadmap_pvp_testing_title">Giai Đoạn PvP Testing (Open Beta PvP Limited):
+                        <ul>
+                            <li data-i18n="roadmap_pvp_testing_item1">Kích hoạt PvP trong bản đồ hỗn hợp</li>
+                            <li data-i18n="roadmap_pvp_testing_item2">Kiểm tra sát thương giữa người chơi, tương tác kỹ năng, hệ thống tử trận "Một mạng"</li>
+                            <li data-i18n="roadmap_pvp_testing_item3">Đo hiệu suất máy chủ khi xảy ra giao tranh nhiều người</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="roadmap_guild_dao_title">Giai Đoạn Guild & DAO (Beta Late Stage):
+                        <ul>
+                            <li data-i18n="roadmap_guild_dao_item1">Mở tính năng bang hội và bảng xếp hạng nghề nghiệp</li>
+                            <li data-i18n="roadmap_guild_dao_item2">Cho phép người chơi bầu chọn sự kiện thử nghiệm đầu tiên qua DAO</li>
+                            <li data-i18n="roadmap_guild_dao_item3">Tích hợp marketplace NFT thử nghiệm nội bộ</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3 data-i18n="roadmap_target_player_title">Định Hướng Người Chơi Mục Tiêu</h3>
+                <p data-i18n="roadmap_target_player_intro">CHUP không phải là một game phổ thông dễ dãi – nó được xây dựng dành cho:</p>
+                <ul>
+                    <li data-i18n="roadmap_target_player_item1">Những người chơi MMO cứng cựa (hardcore) yêu thích thể loại sinh tồn, yêu cầu kỹ năng và chiến thuật cao.</li>
+                    <li data-i18n="roadmap_target_player_item2">Những người đã có hiểu biết cơ bản về blockchain và token/NFT, muốn đầu tư thời gian vào một trò chơi có phần thưởng thực và tính cạnh tranh khốc liệt.</li>
+                </ul>
+            </section>
+        </div> <div id="tab-roadmap-timeline" class="tab-pane">
+            <section>
+                <h2 data-i18n="roadmap_timeline_main_title">Lộ Trình Thời Gian</h2>
+                <table class="roadmap-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="roadmap_timeline_header_time">Thời Gian</th>
+                            <th data-i18n="roadmap_timeline_header_objective">Mục Tiêu</th>
+                            <th data-i18n="roadmap_timeline_header_content">Nội Dung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q3_2025_time">Q3 2025</td>
+                            <td data-i18n="roadmap_timeline_q3_2025_objective">Thiết kế MVP & Khởi động phát triển</td>
+                            <td data-i18n="roadmap_timeline_q3_2025_content">- Lập team dev - Xây dựng vương quốc đầu tiên - Thiết kế nhân vật & bản đồ PvE cơ bản - Smart contract $PCOIN & NFT vũ khí</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q4_2025_time">Q4 2025</td>
+                            <td data-i18n="roadmap_timeline_q4_2025_objective">PvE Closed Alpha</td>
+                            <td data-i18n="roadmap_timeline_q4_2025_content">- Mở test nội bộ PvE - Cân bằng gameplay, nhiệm vụ - Ra mắt testnet Web3 ví & inventory NFT</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q1_2026_time">Q1 2026</td>
+                            <td data-i18n="roadmap_timeline_q1_2026_objective">PvP Open Beta (Hạn chế)</td>
+                            <td data-i18n="roadmap_timeline_q1_2026_content">- Mở đấu trường PvP giới hạn - Áp dụng cơ chế "Một mạng" - Giám sát hiệu năng & log dữ liệu chiến đấu</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q2_2026_time">Q2 2026</td>
+                            <td data-i18n="roadmap_timeline_q2_2026_objective">Guild & DAO Integration</td>
+                            <td data-i18n="roadmap_timeline_q2_2026_content">- Mở hệ thống bang hội - Voting thử nghiệm cho bản đồ & event - Marketplace giao dịch nội bộ đầu tiên</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q3_2026_time">Q3 2026</td>
+                            <td data-i18n="roadmap_timeline_q3_2026_objective">Mở rộng 4 vương quốc</td>
+                            <td data-i18n="roadmap_timeline_q3_2026_content">- Mở thêm class - Ra mắt 4 vương quốc chính thức - 36 bản đồ chiến đấu & sự kiện liên vương quốc</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="roadmap_timeline_q4_2026_time">Q4 2026</td>
+                            <td data-i18n="roadmap_timeline_q4_2026_objective">CHUP Full Launch</td>
+                            <td data-i18n="roadmap_timeline_q4_2026_content">- Open World đầy đủ - Mở event rơi vũ khí huyền thoại - Triển khai hệ thống ZK Proof minh bạch item drop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div> <footer class="site-footer">
+            <p data-i18n="footer_copyright">© 2025 Elemental Conquest. Bảo lưu mọi quyền.</p>
+            <div class="social-links">
+                <a href="https://github.com/PeaIsPea" target="_blank" style="margin: 0 10px; color: #333;">
+                    <i class="fa-brands fa-github fa-beat" style="color: #c5cfd7;"></i>
+                </a>
+                <a href="https://www.facebook.com/html.html.2dasd/" target="_blank" style="margin: 0 10px; color: #3b5998;">
+                    <i class="fa-brands fa-facebook fa-beat" style="color: #c5cfd7;"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=SxFLwiPN6Gs&t=4s" target="_blank" style="margin: 0 10px; color: #3b5998;">
+                    <i class="fa-brands fa-youtube fa-beat" style="color: #c5cfd7;"></i>
+                </a>
+            </div>
+        </footer>
+    </div> <script src="js/background.js"></script> 
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
