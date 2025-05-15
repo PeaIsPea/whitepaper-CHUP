@@ -263,6 +263,9 @@ img {
 }
 
 
+
+
+
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .container {
@@ -331,6 +334,32 @@ img {
 
 }
 
+
+
+/* Styling for the video trailer container */
+.trailer-container {
+    position: relative; /* Needed for absolute positioning of iframe */
+    width: 100%; /* Take full width of its container */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (height / width = 9 / 16 = 0.5625) */
+    height: 0; /* Hide the container's height */
+    overflow: hidden; /* Hide anything outside the padding */
+    margin: 25px auto; /* Center the container */
+    max-width: 800px; /* Optional: limit the maximum width of the video */
+    background-color: #000; /* Optional: black background for video area */
+    border-radius: 8px; /* Match container border-radius */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add shadow for depth */
+}
+
+/* Styling for the iframe inside the trailer container */
+.trailer-container iframe {
+    position: absolute; /* Position relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make iframe fill the container width */
+    height: 100%; /* Make iframe fill the container height */
+    border: 0; /* Remove default iframe border */
+}
+
 @media (max-width: 480px) {
     body {
         font-size: 15px; /* Slightly smaller base font for very small screens */
@@ -354,3 +383,5 @@ img {
         padding: 6px;
     }
 }
+
+
